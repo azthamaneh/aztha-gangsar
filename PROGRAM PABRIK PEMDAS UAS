@@ -1,0 +1,16 @@
+# Program untuk simulasi produksi pabrik
+
+# Fungsi untuk menghitung jumlah produk yang dihasilkan
+def hitung_produksi(kapasitas_per_jam, jam_kerja):
+    total_produk = kapasitas_per_jam * jam_kerja
+    return total_produk
+
+# Input dari pengguna
+kapasitas_per_jam = int(input("Masukkan kapasitas produksi per jam: "))
+jam_kerja = int(input("Masukkan jumlah jam kerja per hari: "))
+
+# Hitung total produksi
+total_produk = hitung_produksi(kapasitas_per_jam, jam_kerja)
+
+# Menampilkan hasil
+print(f"Total produk yang dihasilkan dalam satu hari adalah: {total_produk}")
